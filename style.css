@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+header {
+  margin: 0 16rem;
+}
+
+img {
+  width: 969px;
+  height: 470px;
+  border-radius: 12px;
+}
