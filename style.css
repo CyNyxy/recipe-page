@@ -89,6 +89,7 @@ input[type="checkbox"]:checked {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  max-width: 600px;
 }
 
 .material-icons {
@@ -121,12 +122,20 @@ input[type="checkbox"]:checked {
   color: #000;
 }
 
-.text-14 {
+.text-intro {
   font-family: 'Montserrat';
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   color: #4F4F4F;
+}
+
+.text-14 {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #333;
   max-width: 592px;
 }
 
@@ -199,6 +208,108 @@ li::marker {
   text-align: center;
   color: #828282;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   font-weight: 500;
   font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 352px;
+    height: 200px;
+    padding: 0;
+    margin: 1.25rem 0;
+  }
+  header {
+    text-align: center;
+    width: 100%;
+  }
+  .intro-box {
+    text-align: left;
+    padding: 0;
+    gap: 0;
+  }
+  h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 2rem 0 12px 0;
+  }
+  h3 {
+    padding: 1rem 0;
+  }
+  .text-intro {
+    font-size: 12px;
+  }
+  .flip-icon {
+    margin-right: 11px;
+  }
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .text-14 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 8px;
+  }
+  .material-icons {
+    font-size: 1rem !important;
+  }
+  .material-icons-outlined {
+    font-size: 1rem !important;
+  }
+  .container {
+    margin: 0 12px;
+    max-width: 350px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .recipe-info-box {
+    box-shadow: none;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 360px;
+    padding: 0;
+  }
+  .info-box {
+    padding: 10px 0;
+  }
+  .info-box:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+  .info-box:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+  .info-box:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+  .info-box:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+  }
+  .ingredient {
+    gap: 8px;
+  }
+  .text-black {
+    font-size: 1rem;
+  }
+  .footer-source {
+    font-size: 12px;
+  }
 }
