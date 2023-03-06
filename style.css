@@ -16,6 +16,8 @@
   align-content: center;
   max-width: 969px;
   color: #333333;
+  padding-left: min(15px, 100%);
+  padding-right: min(15px, 100%);
 }
 
 main {
@@ -65,8 +67,7 @@ p {
 }
 
 img {
-  width: 969px;
-  height: 470px;
+  width: 100%;
   border-radius: 12px;
   padding: 3rem 0;
 }
@@ -116,7 +117,6 @@ input[type="checkbox"]:checked {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 40px;
-  width: max-content;
 }
 
 .text-black {
@@ -158,6 +158,10 @@ input[type="checkbox"]:checked {
   display: flex;
   gap: 17px;
   padding: 6px 0;
+}
+
+.ingredient:last-of-type {
+  padding-bottom: 2rem;
 }
 
 section {
@@ -214,10 +218,8 @@ li::marker {
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   img {
-    width: 352px;
-    height: 200px;
     padding: 0;
     margin: 1.25rem 0;
   }
@@ -261,11 +263,14 @@ li::marker {
     font-size: 1rem !important;
   }
   .container {
-    margin: 0 12px;
-    max-width: 350px;
+    padding: 0 12px;
+    max-width: 100%;
   }
   p {
     font-size: 14px;
+  }
+  aside {
+    width: 100%;
   }
   .recipe-info-box {
     box-shadow: none;
@@ -273,7 +278,6 @@ li::marker {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 360px;
     padding: 0;
   }
   .info-box {
@@ -282,7 +286,6 @@ li::marker {
   .info-box:nth-child(1) {
     grid-row-start: 1;
     grid-column-start: 1;
-
     grid-row-end: 2;
     grid-column-end: 2;
   }
